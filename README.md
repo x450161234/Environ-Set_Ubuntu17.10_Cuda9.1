@@ -53,11 +53,11 @@ sudo init 3
 ```
 install Nvidia Graphical Driver(.run)
 ```
-查看自己的显卡型号：
+# 查看自己的显卡型号：
 sudo lshw -numeric -C display
-如果之前安装过nvidia驱动，先卸载：
+# 如果之前安装过nvidia驱动，先卸载：
 sudo apt-get remove –purge nvidia*
-Ctrl-Alt+F1进入命令行界面
+# Ctrl-Alt+F1进入命令行界面
 cd Downloads
 sudo chmod a+x /home/daniel/Downloads/NVIDIA-Linux-x86_64-390.25.run
 sudo .//home/daniel/Downloads/NVIDIA-Linux-x86_64-390.25.run –no-x-check –no-nouveau-check –no-opengl-files
@@ -111,4 +111,5 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}/usr/local/cuda-9.0/lib64:/usr/local/cu
 
 ### Reference:
 [ubuntu 17.10 + CUDA 9.0 + cuDNN 7 + tensorflow源码编译](https://zhuanlan.zhihu.com/p/30781460)
+
 [双显卡 ubuntu16.04 安装 NVIDIA驱动 + CUDA + cuDNN + tensorflow-gpu + keras](https://zhuanlan.zhihu.com/p/30781460)
