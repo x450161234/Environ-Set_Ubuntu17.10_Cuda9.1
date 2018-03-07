@@ -113,3 +113,17 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}/usr/local/cuda-9.0/lib64:/usr/local/cu
 [ubuntu 17.10 + CUDA 9.0 + cuDNN 7 + tensorflow源码编译](https://zhuanlan.zhihu.com/p/30781460)
 
 [双显卡 ubuntu16.04 安装 NVIDIA驱动 + CUDA + cuDNN + tensorflow-gpu + keras](https://zhuanlan.zhihu.com/p/30781460)
+
+
+## 其他配置
+### Linux Windows 时间冲突
+```
+sudo vim /etc/default/rcS
+找到这一行：UTC=yes
+把yes改为no
+```
+### Wifi硬件被屏蔽
+```sudo modprobe -r ideapad_laptop```
+
+### 其他软件
+Timeshift（系统2软件）
